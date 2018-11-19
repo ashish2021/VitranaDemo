@@ -13,14 +13,14 @@ namespace vitiranaDemo.Controllers
         [Authorize]
         public ActionResult Index()
         {
-            ViewBag.Message = "This can be viewed only by authenticated users only";
+            ViewBag.Message = "This can be viewed only by authenticated users only !";
             return View();
         }
 
         [Authorize(Roles = "user")]
         public ActionResult About()
         {
-            ViewBag.Message = "This can be viewed only by users in User role only";
+            ViewBag.Message = "This can be viewed only by users in User role only !";
             return View();
         }
 
